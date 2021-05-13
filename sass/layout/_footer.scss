@@ -1,0 +1,107 @@
+.page-footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .footer-left-side,
+  .footer-right-side {
+    display: inline-block;
+    flex-basis: calc((100% - var(--card-set-gap)) / 2);
+  }
+  .footer-left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .footer-contacts {
+    margin-top: var(--card-set-gap);
+    margin-right: var(--card-set-gap);
+  }
+  .footer-contacts,
+  .footer-link {
+    display: inline-block;
+    justify-content: space-between;
+    flex-basis: calc((100% - var(--card-set-gap)) / 2);
+  }
+  .footer-logo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .contacts-address {
+    padding-top: 20px;
+  }
+  .address__item :not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .address__text {
+    display: inline-flex;
+    width: 100%;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--secondary-title-color);
+  }
+  .footer-title {
+    display: flex;
+    margin-bottom: 20px;
+    height: 16px;
+    font-weight: bold;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-title-color);
+  }
+  .list-icon {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .list-icon__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .list-icon__link {
+    fill: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .form-mailing {
+    display: flex;
+  }
+  .form-mailing__input {
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--secondary-title-color);
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  .form-mailing__button {
+    display: flex;
+    margin-left: 12px;
+  }
+  .form-mailing__text {
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  .form-mailing__icon {
+    display: inline-block;
+    align-items: center;
+    margin-left: 10px;
+  }
