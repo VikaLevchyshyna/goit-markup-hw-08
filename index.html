@@ -47,19 +47,51 @@
                         &nbsp; +38 096 111 11 11</a>
                 </li>
             </ul>
-            <button type="button" class="page-header__mobile-menu-btn is-open">
-                <svg class="page-header__mobile-menu-icon" 
-                    width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <!-- <button type="button" class="page-header__mobile-menu-btn data-menu-button">
+                <svg class="page-header__mobile-menu-icon">
                     <use class="icon-menu" href="./images/sprite.svg#menu_btn"></use>
                 </svg>
             </button>
-            <div class="mobile-menu">
-                <button type="button" class="mobile-menu__close">
+            <div class="mobile-menu data-menu">
+                <button type="button" class="mobile-menu__close data-menu-close">
                     <svg class="mobile-menu__close-icon">
                         <use class="icon-cross" href="./images/sprite.svg#icon-close-btn-11dp"></use>
                     </svg>
                 </button>
-            </div>
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__cotacts list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div> -->
         </div>
     </header> 
 
@@ -150,12 +182,12 @@
            </div>
         </section>
         <!-- Team -->
-        <!-- <section class="team section">
+        <section class="team section">
            <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list team-list">
                     <li class="item team__item">
-                        <img src="./images/photo_1.jpg" alt="Фото продакт дизайнера" width="270">
+                        <img class="team__photo" src="./images/photo_1.jpg" alt="Фото продакт дизайнера" width="270">
                         <h3 class="team__full-name">Игорь Демьяненко</h3>
                         <p class="team__position">Product Designer</p>
                         <ul class="team__list-icon">
@@ -190,7 +222,7 @@
                         </ul>
                     </li>
                     <li class="item team__item">
-                        <img src="./images/photo_2.jpg" alt="Фото фронтенд девелопера" width="270">
+                        <img class="team__photo" src="./images/photo_2.jpg" alt="Фото фронтенд девелопера" width="270">
                         <h3 class="team__full-name">Ольга Репина</h3>
                         <p class="team__position">Frontend Developer</p>
                         <ul class="team__list-icon">
@@ -225,7 +257,7 @@
                         </ul>
                     </li>
                     <li class="item team__item">
-                        <img src="./images/photo_3.jpg" alt="Фото маркетолога" width="270">
+                        <img class="team__photo" src="./images/photo_3.jpg" alt="Фото маркетолога" width="270">
                         <h3 class="team__full-name">Николай Тарасов</h3>
                         <p class="team__position">Marketing</p>
                         <ul class="team__list-icon">
@@ -260,7 +292,7 @@
                         </ul>                   
                     </li>
                     <li class="item team__item">
-                        <img src="./images/photo_4.jpg" alt="Фото дизайнера" width="270">
+                        <img class="team__photo" src="./images/photo_4.jpg" alt="Фото дизайнера" width="270">
                         <h3 class="team__full-name">Михаил Ермаков</h3>
                         <p class="team__position">UI Designer</p>
                         <ul class="team__list-icon">
@@ -296,9 +328,9 @@
                     </li>      
                 </ul>
            </div>
-        </section> -->
+        </section>
         <!-- Clients -->
-        <!-- <section class="client section">
+        <section class="client section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="list client-list">
@@ -346,10 +378,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main> 
     <!-- Footer -->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
         <div class="container footer-side">
             <div class="footer-left-side">
                 <div class="footer-contacts">
@@ -417,7 +449,7 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <!-- Modal -->
     <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -467,5 +499,6 @@
         </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
