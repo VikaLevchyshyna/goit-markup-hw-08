@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- Header -->
+     <!-- Header -->
     <header class="page-header">
         <div class="container main-nav"> 
             <nav class="nav-list"> 
@@ -47,8 +47,22 @@
                         &nbsp; +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="page-header__mobile-menu-btn is-open">
+                <svg class="page-header__mobile-menu-icon" 
+                    width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/sprite.svg#menu_btn"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu">
+                <button type="button" class="mobile-menu__close">
+                    <svg class="mobile-menu__close-icon">
+                        <use class="icon-cross" href="./images/sprite.svg#icon-close-btn-11dp"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
-    </header>
+    </header> 
+
     <!-- Contant page -->
     <main> 
         <!-- Hero -->
@@ -56,7 +70,7 @@
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="button hero__button" data-modal-open>Заказать услугу</button>
         </section>      
-         <!-- Features of work -->
+        <!-- Features of work -->
         <section class="feature section">
            <div class="container">
                 <h2 class="visually-hidden">Особенности работы</h2>
@@ -136,7 +150,7 @@
            </div>
         </section>
         <!-- Team -->
-        <section class="team section">
+        <!-- <section class="team section">
            <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list team-list">
@@ -282,9 +296,9 @@
                     </li>      
                 </ul>
            </div>
-        </section>
+        </section> -->
         <!-- Clients -->
-        <section class="client section">
+        <!-- <section class="client section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="list client-list">
@@ -332,10 +346,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
-    </main>
+        </section> -->
+    </main> 
     <!-- Footer -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
         <div class="container footer-side">
             <div class="footer-left-side">
                 <div class="footer-contacts">
@@ -403,12 +417,13 @@
                 </form>
             </div>
         </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- Modal -->
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close-btn" data-modal-close>
                 <svg class="modal__close-icon" width="11px" height="11px">
-                    <use href="./icon_2/icons.svg#icon-close-btn-11dp"></use>
+                    <use href="./icon_2/sprite.svg#icon-close-btn-11dp"></use>
                 </svg>
             </button>
             <form class="form-modal">
@@ -418,7 +433,7 @@
                     <span class="form__wrapper">
                         <input type="text" class="form__input" name="user-name" />
                         <svg class="form__icon" width="18px" height="18px">
-                            <use href="./icon_2/icons.svg#icon-person-black-18dp"></use>
+                            <use href="./icon_2/sprite.svg#icon-person-black-18dp"></use>
                         </svg>
                     </span>
                 </label>
@@ -427,7 +442,7 @@
                     <span class="form__wrapper">
                         <input type="tel" class="form__input" name="user-tel" />
                         <svg class="form__icon" width="18px" height="18px">
-                            <use href="./icon_2/icons.svg#icon-phone-black-18dp"></use>
+                            <use href="./icon_2/sprite.svg#icon-phone-black-18dp"></use>
                         </svg>
                     </span>
                 </label>
@@ -436,7 +451,7 @@
                     <span class="form__wrapper">
                         <input type="email" class="form__input" name="user-mail" />
                         <svg class="form__icon" width="18px" height="18px">
-                            <use href="./icon_2/icons.svg#icon-email-black-18dp"></use>
+                            <use href="./icon_2/sprite.svg#icon-email-black-18dp"></use>
                         </svg>
                     </span>
                 </label>
@@ -450,7 +465,7 @@
                 <button type="submit" class="button form__button">Отправить</button>         
             </form>
         </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
 </body>
 </html>
