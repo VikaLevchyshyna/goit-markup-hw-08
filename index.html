@@ -47,50 +47,50 @@
                         &nbsp; +38 096 111 11 11</a>
                 </li>
             </ul>
-            <div class="backdrop">
-                <div >
-                    <button type="button" class="page-header__mobile-menu-btn data-menu-button">
-                        <svg class="page-header__mobile-menu-icon">
-                            <use class="icon-menu data-menu-button" href="./images/sprite.svg#menu_btn"></use>
-                            <use class="icon-cross data-menu-close" href="./images/sprite.svg#icon-close-btn-11dp"></use>
-                        </svg>
-                    </button>
-                    <div class="mobile-menu data-menu is-hidden">
-                        <ul class="mobile-menu__list list">
-                            <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link link">Студия</a>
-                            </li>
-                            <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link link">Портфолио</a>
-                            </li>
-                            <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link link">Контакты</a>
-                            </li>
-                        </ul>
-                        <ul class="mobile-menu__cotacts list">
-                            <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link link">+38 096 111 11 11</a>
-                            </li>
-                            <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link link">info@devstudio.com</a>
-                            </li>
-                        </ul>
-                        <ul class="mobile-menu__social list">
-                            <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link link">Instagram</a>
-                            </li>
-                            <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link link">Twitter</a>
-                            </li>
-                            <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link link">Facebook</a>
-                            </li>
-                            <li class="mobile-menu__item">
-                                <a href="" class="mobile-menu__link link">LinkedIn</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <button type="button" class="page-header__mobile-menu-btn" data-menu-button>
+                <svg class="page-header__mobile-menu-icon" height="40px" width="40px">
+                    <use class="icon-menu" href="./images/sprite.svg#menu_btn"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <button type="button" class="page-header__mobile-menu-btn" data-menu-button>
+                    <svg class="page-header__mobile-menu-icon" height="40px" width="40px">
+                        <use class="icon-cross" data-menu-close href="./images/sprite.svg#icon-close-btn-11dp"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__cotacts list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">LinkedIn</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header> 
@@ -162,10 +162,10 @@
                                 <source srcset="./images/services1-desktop.jpg 1x, ./images/services1-desktop@2x.jpg 2x" 
                                     media="(min-width:1200px)">
                                 <img src="./imagesservices1-desktop.jpg" alt="Декстопная разработка" width="370">
-                                <div class="services__overlay">
-                                    <p class="services__description">Десктопные приложения</p>
-                                </div>
                             </picture>
+                            <div class="services__overlay">
+                                <p class="services__description">Десктопные приложения</p>
+                            </div>
                         </div>
                     </li>
                     <li class="services__item item">
@@ -176,10 +176,10 @@
                                 <source srcset="./images/services2-desktop.jpg 1x, ./images/services2-desktop@2x.jpg 2x" 
                                     media="(min-width:1200px)">
                                 <img src="./images/services2-desktop.jpg" alt="Мобильная разработка" width="370">
-                                <div class="services__overlay">
-                                    <p class="services__description">Мобильные приложения</p>
-                                </div>
                             </picture> 
+                            <div class="services__overlay">
+                                <p class="services__description">Мобильные приложения</p>
+                            </div>
                         </div>
                     </li>
                     <li class="services__item item">
@@ -190,10 +190,10 @@
                                 <source srcset="./images/services3-desktop.jpg 1x, ./images/services3-desktop@2x.jpg 2x" 
                                     media="(min-width:1200px)">
                                 <img src="./images/services3-desktop.jpg" alt="Дизайн" width="370">
-                                <div class="services__overlay">
-                                    <p class="services__description">Дизайнерские решения</p>
-                                </div>
-                            </picture>      
+                            </picture>    
+                            <div class="services__overlay">
+                                <p class="services__description">Дизайнерские решения</p>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -517,7 +517,7 @@
                     <button type="submit" class="button form-mailing__button">
                         <span class="form-mailing__text">Подписаться</span>
                         <svg class="form-mailing__icon" width="24px" height="24px">
-                            <use href="./images/icons.svg#icon-icon_send"></use>
+                            <use href="./images/sprite.svg#icon-icon_send"></use>
                         </svg>
                     </button>
                 </form>
@@ -525,7 +525,7 @@
         </div>
     </footer>
     <!-- Modal -->
-    <div class="backdrop" data-modal>
+    <!-- <div class="backdrop" data-modal>
         <div class="modal is-hidden">
             <button type="button" class="modal__close-btn" data-modal-close>
                 <svg class="modal__close-icon" width="11px" height="11px">
@@ -571,8 +571,8 @@
                 <button type="submit" class="button form__button">Отправить</button>         
             </form>
         </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+    <!-- <script src="./js/modal.js"></script> -->
     <script src="./js/menu.js"></script>
 </body>
 </html>
