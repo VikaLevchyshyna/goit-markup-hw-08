@@ -219,6 +219,7 @@ img {
 }
 
 .mobile-menu__contacts {
+  margin-left: 40px;
   margin-bottom: 64px;
 }
 
@@ -233,6 +234,7 @@ img {
 
 .mobile-menu__social {
   display: flex;
+  margin-left: 40px;
   margin-bottom: 48px;
 }
 
@@ -246,6 +248,11 @@ img {
 }
 
 .mobile-menu__link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 100;
+  bottom: 50;
   width: 22px;
   height: 0px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -942,9 +949,14 @@ img {
 }
 
 .footer-side {
-  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) and (min-width: 1200px) {
+  .footer-side {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -971,8 +983,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-left-side {
-    flex-direction: row;
-    display: inline-block;
     flex-basis: calc((100% - var(--card-set-gap)) / 2);
   }
 }
@@ -991,10 +1001,22 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-left: 76px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-top: var(--card-set-gap);
     margin-right: var(--card-set-gap);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-link {
+    margin-right: 89px;
   }
 }
 
@@ -1054,7 +1076,6 @@ img {
 .footer-title {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 20px;
   height: 16px;
   font-weight: bold;
@@ -1062,6 +1083,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-title {
+    align-items: center;
+  }
 }
 
 .list-icon {
@@ -1086,7 +1113,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .form-mailing {
-    display: flex;
     flex-direction: row;
     align-items: baseline;
   }
@@ -1127,12 +1153,13 @@ img {
 }
 
 .form-mailing__button {
+  display: flex;
+  align-items: center;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
   .form-mailing__button {
-    display: flex;
     margin-left: 12px;
   }
 }

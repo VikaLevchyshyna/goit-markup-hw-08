@@ -73,6 +73,7 @@
 .mobile-menu__list {
   margin-top: 48px;
   margin-left: 40px;
+  // margin-bottom: 302px;
 }
 .mobile-menu__nav {
   margin-bottom: 32px;
@@ -83,6 +84,7 @@
   color: #212121;
 }
 .mobile-menu__contacts {
+  margin-left: 40px;
   margin-bottom: 64px;
 }
 .mobile-menu__info {
@@ -95,6 +97,7 @@
 }
 .mobile-menu__social {
   display: flex;
+  margin-left: 40px;
   margin-bottom: 48px;
 }
 .mobile-menu__link {
@@ -106,6 +109,11 @@
   color: #2196f3;
 }
 .mobile-menu__link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 100;
+  bottom: 50;
   width: 22px;
   height: 0px;
   border: 1px solid rgba(33, 33, 33, 0.2);
