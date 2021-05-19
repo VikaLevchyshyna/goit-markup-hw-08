@@ -53,17 +53,17 @@
                 </svg>
             </button>
             <div class="mobile-menu" data-menu>
-                <button type="button" class="page-header__mobile-menu-btn" data-menu-button>
+                <button type="button" class="page-header__mobile-menu-btn" data-menu-close>
                     <svg class="page-header__mobile-menu-icon" height="40px" width="40px">
-                        <use class="icon-cross" data-menu-close href="./images/sprite.svg#icon-close-black-18dp"></use>
+                        <use class="icon-cross" href="./images/sprite.svg#icon-close-black-18dp"></use>
                     </svg>
                 </button>
                 <ul class="mobile-menu__list list">
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__nav link">Студия</a>
+                        <a href="./index.html" class="mobile-menu__nav link">Студия</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__nav link">Портфолио</a>
+                        <a href="./portfolio.html" class="mobile-menu__nav link">Портфолио</a>
                     </li>
                     <li class="mobile-menu__item">
                         <a href="" class="mobile-menu__nav link">Контакты</a>
@@ -79,13 +79,19 @@
                 </ul>
                 <ul class="mobile-menu__social list">
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link link">Instagram</a>
+                        <a href="" class="mobile-menu__link link">Instagram
+                            <span>&nbsp;|&nbsp;</span>
+                        </a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link link">Twitter</a>
+                        <a href="" class="mobile-menu__link link">Twitter
+                            <span>&nbsp;|&nbsp;</span>
+                        </a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link link">Facebook</a>
+                        <a href="" class="mobile-menu__link link">Facebook
+                            <span>&nbsp;|&nbsp;</span>
+                        </a>
                     </li>
                     <li class="mobile-menu__item">
                         <a href="" class="mobile-menu__link link">LinkedIn</a>
@@ -218,7 +224,7 @@
                                 media="(min-width:480px)" type="image/webp">
                             <source srcset="./images/teammate1-mobile.jpg 1x, ./images/teammate1-mobile@2x.jpg 2x" 
                                 media="(min-width:480px)">
-                            <img class="team__photo" src="./images/teammate1-mobile.jpg" alt="Фото продакт дизайнера" width="270">
+                            <img class="team__photo" src="./images/teammate1-mobile.jpg" alt="Фото продакт дизайнера">
                         </picture>
                         <h3 class="team__full-name">Игорь Демьяненко</h3>
                         <p class="team__position">Product Designer</p>
@@ -267,7 +273,7 @@
                                 media="(min-width:480px)" type="image/webp">
                             <source srcset="./images/teammate2-mobile.jpg 1x, ./images/teammate2-mobile@2x.jpg 2x" 
                                 media="(min-width:480px)">
-                            <img class="team__photo" src="./images/teammate2-mobile.jpg" alt="Фото фронтенд девелопера" width="270">
+                            <img class="team__photo" src="./images/teammate2-mobile.jpg" alt="Фото фронтенд девелопера">
                         </picture>
                         <h3 class="team__full-name">Ольга Репина</h3>
                         <p class="team__position">Frontend Developer</p>
@@ -316,7 +322,7 @@
                                 media="(min-width:480px)" type="image/webp">
                             <source srcset="./images/teammate3-mobile.jpg 1x, ./images/teammate3-mobile@2x.jpg 2x" 
                                 media="(min-width:480px)">
-                            <img class="team__photo" src="./images/teammate3-mobile.jpg" alt="Фото маркетолога" width="270">
+                            <img class="team__photo" src="./images/teammate3-mobile.jpg" alt="Фото маркетолога">
                         </picture> 
                         <h3 class="team__full-name">Николай Тарасов</h3>
                         <p class="team__position">Marketing</p>
@@ -365,7 +371,7 @@
                                 media="(min-width:480px)" type="image/webp">
                             <source srcset="./images/teammate4-mobile.jpg 1x, ./images/teammate4-mobile@2x.jpg 2x" 
                                 media="(min-width:480px)">
-                            <img class="team__photo" src="./images/teammate4-mobile.jpg" alt="Фото дизайнера" width="270">
+                            <img class="team__photo" src="./images/teammate4-mobile.jpg" alt="Фото дизайнера">
                         </picture>
                         <h3 class="team__full-name">Михаил Ермаков</h3>
                         <p class="team__position">UI Designer</p>
@@ -525,7 +531,7 @@
         </div>
     </footer>
     <!-- Modal -->
-    <!-- <div class="backdrop" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal is-hidden">
             <button type="button" class="modal__close-btn" data-modal-close>
                 <svg class="modal__close-icon" width="11px" height="11px">
@@ -571,8 +577,8 @@
                 <button type="submit" class="button form__button">Отправить</button>         
             </form>
         </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
 </html>
